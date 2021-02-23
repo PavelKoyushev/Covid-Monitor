@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     let tableView: UITableView = {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(CustomTableViewCell.self, forCellReuseIdentifier: "cell")
         return tableView
     }()
 
@@ -29,6 +29,9 @@ class ViewController: UIViewController {
         
         networkCovidManager.delegate = self
         networkCovidManager.fetchCurrentCases()
+        
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 44
     }
 }
 
@@ -68,8 +71,12 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = regions[indexPath.row].region
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CustomTableViewCell
+        
+        cell.labUserName.text = regions[indexPath.row].region
+        cell.labMessage.text = "Infected"
+        cell.labTime.text = String(regions[indexPath.row].infected)
+        
         return cell
     }
 }

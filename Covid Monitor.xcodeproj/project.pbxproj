@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB4623EC25E574B2005EEF27 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4623EB25E574B2005EEF27 /* CustomTableViewCell.swift */; };
 		EB50E1CB25E4E98400E9C71F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB50E1CA25E4E98400E9C71F /* AppDelegate.swift */; };
 		EB50E1CD25E4E98400E9C71F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB50E1CC25E4E98400E9C71F /* SceneDelegate.swift */; };
 		EB50E1CF25E4E98400E9C71F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB50E1CE25E4E98400E9C71F /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EB4623EB25E574B2005EEF27 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		EB50E1C725E4E98400E9C71F /* Covid Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Covid Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB50E1CA25E4E98400E9C71F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB50E1CC25E4E98400E9C71F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				EB50E1CA25E4E98400E9C71F /* AppDelegate.swift */,
 				EB50E1CC25E4E98400E9C71F /* SceneDelegate.swift */,
 				EB50E1CE25E4E98400E9C71F /* ViewController.swift */,
+				EB4623EB25E574B2005EEF27 /* CustomTableViewCell.swift */,
 				EB50E1E525E508B900E9C71F /* NetworkCovidManager.swift */,
 				EB50E1D025E4E98400E9C71F /* Main.storyboard */,
 				EB50E1D325E4E98700E9C71F /* Assets.xcassets */,
@@ -157,6 +160,7 @@
 				EB50E1CF25E4E98400E9C71F /* ViewController.swift in Sources */,
 				EB50E1CB25E4E98400E9C71F /* AppDelegate.swift in Sources */,
 				EB50E1CD25E4E98400E9C71F /* SceneDelegate.swift in Sources */,
+				EB4623EC25E574B2005EEF27 /* CustomTableViewCell.swift in Sources */,
 				EB50E1E625E508B900E9C71F /* NetworkCovidManager.swift in Sources */,
 				EB50E1E025E4ED2900E9C71F /* CurrentCasesData.swift in Sources */,
 				EB50E1EA25E509C600E9C71F /* CurrentCases.swift in Sources */,
