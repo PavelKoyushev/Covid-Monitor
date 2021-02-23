@@ -8,12 +8,23 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var networkCovidManager = NetworkCovidManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        networkCovidManager.delegate = self
+        networkCovidManager.fetchCurrentCases()
     }
-
 
 }
 
+extension ViewController: NetworkCovidManagerDelegate {
+    func updateInterface(_: NetworkCovidManager, with currentCases: CurrentCases) {
+        print(currentCases.country)
+        print(currentCases.countryInfected)
+        print(currentCases.countryRecovered)
+        print(currentCases.countryDeceased)
+    }
+}

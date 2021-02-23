@@ -13,6 +13,9 @@
 		EB50E1D225E4E98400E9C71F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB50E1D025E4E98400E9C71F /* Main.storyboard */; };
 		EB50E1D425E4E98700E9C71F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB50E1D325E4E98700E9C71F /* Assets.xcassets */; };
 		EB50E1D725E4E98700E9C71F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB50E1D525E4E98700E9C71F /* LaunchScreen.storyboard */; };
+		EB50E1E025E4ED2900E9C71F /* CurrentCasesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB50E1DF25E4ED2900E9C71F /* CurrentCasesData.swift */; };
+		EB50E1E625E508B900E9C71F /* NetworkCovidManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB50E1E525E508B900E9C71F /* NetworkCovidManager.swift */; };
+		EB50E1EA25E509C600E9C71F /* CurrentCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB50E1E925E509C600E9C71F /* CurrentCases.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		EB50E1D325E4E98700E9C71F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB50E1D625E4E98700E9C71F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB50E1D825E4E98700E9C71F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB50E1DF25E4ED2900E9C71F /* CurrentCasesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentCasesData.swift; sourceTree = "<group>"; };
+		EB50E1E525E508B900E9C71F /* NetworkCovidManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCovidManager.swift; sourceTree = "<group>"; };
+		EB50E1E925E509C600E9C71F /* CurrentCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentCases.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,9 @@
 				EB50E1CA25E4E98400E9C71F /* AppDelegate.swift */,
 				EB50E1CC25E4E98400E9C71F /* SceneDelegate.swift */,
 				EB50E1CE25E4E98400E9C71F /* ViewController.swift */,
+				EB50E1E925E509C600E9C71F /* CurrentCases.swift */,
+				EB50E1DF25E4ED2900E9C71F /* CurrentCasesData.swift */,
+				EB50E1E525E508B900E9C71F /* NetworkCovidManager.swift */,
 				EB50E1D025E4E98400E9C71F /* Main.storyboard */,
 				EB50E1D325E4E98700E9C71F /* Assets.xcassets */,
 				EB50E1D525E4E98700E9C71F /* LaunchScreen.storyboard */,
@@ -140,6 +149,9 @@
 				EB50E1CF25E4E98400E9C71F /* ViewController.swift in Sources */,
 				EB50E1CB25E4E98400E9C71F /* AppDelegate.swift in Sources */,
 				EB50E1CD25E4E98400E9C71F /* SceneDelegate.swift in Sources */,
+				EB50E1E625E508B900E9C71F /* NetworkCovidManager.swift in Sources */,
+				EB50E1E025E4ED2900E9C71F /* CurrentCasesData.swift in Sources */,
+				EB50E1EA25E509C600E9C71F /* CurrentCases.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
