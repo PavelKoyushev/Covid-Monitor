@@ -43,6 +43,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB4623E925E56CF2005EEF27 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EB50E1E925E509C600E9C71F /* CurrentCases.swift */,
+				EB50E1DF25E4ED2900E9C71F /* CurrentCasesData.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		EB50E1BE25E4E98400E9C71F = {
 			isa = PBXGroup;
 			children = (
@@ -62,11 +71,10 @@
 		EB50E1C925E4E98400E9C71F /* Covid Monitor */ = {
 			isa = PBXGroup;
 			children = (
+				EB4623E925E56CF2005EEF27 /* Model */,
 				EB50E1CA25E4E98400E9C71F /* AppDelegate.swift */,
 				EB50E1CC25E4E98400E9C71F /* SceneDelegate.swift */,
 				EB50E1CE25E4E98400E9C71F /* ViewController.swift */,
-				EB50E1E925E509C600E9C71F /* CurrentCases.swift */,
-				EB50E1DF25E4ED2900E9C71F /* CurrentCasesData.swift */,
 				EB50E1E525E508B900E9C71F /* NetworkCovidManager.swift */,
 				EB50E1D025E4E98400E9C71F /* Main.storyboard */,
 				EB50E1D325E4E98700E9C71F /* Assets.xcassets */,

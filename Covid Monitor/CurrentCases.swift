@@ -14,10 +14,7 @@ struct CurrentCases {
     let countryRecovered: Int
     let countryDeceased: Int
     
-    let region: String
-    let regionInfected: Int
-    let regionRecovered: Int
-    let regionDeceased: Int
+    var region = [(region: String, infected: Int, recovered: Int, deceased: Int)]()
     
     let country: String
     let lastUpdatedAtApify: String
@@ -28,10 +25,9 @@ struct CurrentCases {
         countryRecovered = currentCasesData.recovered
         countryDeceased = currentCasesData.deceased
         
-        region = currentCasesData.infectedByRegion.first!.region
-        regionInfected = currentCasesData.infectedByRegion.first!.infected
-        regionRecovered = currentCasesData.infectedByRegion.first!.recovered
-        regionDeceased = currentCasesData.infectedByRegion.first!.deceased
+        for item in currentCasesData.infectedByRegion {
+            region.append((region: item.region, infected: item.infected, recovered: item.recovered, deceased: item.deceased))
+        }
         
         country = currentCasesData.country
         lastUpdatedAtApify = currentCasesData.lastUpdatedAtApify
