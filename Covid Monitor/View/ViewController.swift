@@ -30,8 +30,8 @@ class ViewController: UIViewController {
         networkCovidManager.delegate = self
         networkCovidManager.fetchCurrentCases()
         
-        tableView.rowHeight = UITableView.automaticDimension
-        tableView.estimatedRowHeight = 44
+        //tableView.rowHeight = UITableView.automaticDimension
+        tableView.rowHeight = 60
     }
 }
 
@@ -73,9 +73,19 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CustomTableViewCell
         
-        cell.labUserName.text = regions[indexPath.row].region
-        cell.labMessage.text = "Infected"
-        cell.labTime.text = String(regions[indexPath.row].infected)
+        cell.nameRegionLabel.text = regions[indexPath.row].region
+
+        cell.infectedLabel.text = "Infected"
+        cell.dataInfectedLabel.text = String(regions[indexPath.row].infected)
+        
+        cell.recoveredLabel.text = "Recovered"
+        cell.dataRecoveredLabel.text = String(regions[indexPath.row].recovered)
+        
+        cell.deceasedLabel.text = "Deceased"
+        cell.dataDeceasedLabel.text = String(regions[indexPath.row].deceased)
+//        cell.labUserName.text = regions[indexPath.row].region
+//        cell.labMessage.text = "Infected"
+//        cell.labTime.text = String(regions[indexPath.row].infected)
         
         return cell
     }

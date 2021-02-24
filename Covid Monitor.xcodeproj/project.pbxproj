@@ -73,11 +73,10 @@
 		EB50E1C925E4E98400E9C71F /* Covid Monitor */ = {
 			isa = PBXGroup;
 			children = (
+				EBB1340725E6BEDA00AB38EB /* View */,
 				EB4623E925E56CF2005EEF27 /* Model */,
 				EB50E1CA25E4E98400E9C71F /* AppDelegate.swift */,
 				EB50E1CC25E4E98400E9C71F /* SceneDelegate.swift */,
-				EB50E1CE25E4E98400E9C71F /* ViewController.swift */,
-				EB4623EB25E574B2005EEF27 /* CustomTableViewCell.swift */,
 				EB50E1E525E508B900E9C71F /* NetworkCovidManager.swift */,
 				EB50E1D025E4E98400E9C71F /* Main.storyboard */,
 				EB50E1D325E4E98700E9C71F /* Assets.xcassets */,
@@ -85,6 +84,15 @@
 				EB50E1D825E4E98700E9C71F /* Info.plist */,
 			);
 			path = "Covid Monitor";
+			sourceTree = "<group>";
+		};
+		EBB1340725E6BEDA00AB38EB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EB50E1CE25E4E98400E9C71F /* ViewController.swift */,
+				EB4623EB25E574B2005EEF27 /* CustomTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
