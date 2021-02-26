@@ -21,7 +21,7 @@ class CustomTableViewCell: UITableViewCell {
     
     let infectedLabel:UILabel = {
         let label = UILabel()
-        label.font = UIFont.boldSystemFont(ofSize: 16)
+        label.font = UIFont.systemFont(ofSize: 16)
         label.textColor = .black
         label.translatesAutoresizingMaskIntoConstraints = false
         label.clipsToBounds = true
@@ -30,7 +30,7 @@ class CustomTableViewCell: UITableViewCell {
     
     let recoveredLabel:UILabel = {
         let label = UILabel()
-        label.font = UIFont.boldSystemFont(ofSize: 16)
+        label.font = UIFont.systemFont(ofSize: 16)
         label.textColor = .black
         label.translatesAutoresizingMaskIntoConstraints = false
         label.clipsToBounds = true
@@ -39,7 +39,7 @@ class CustomTableViewCell: UITableViewCell {
     
     let deceasedLabel:UILabel = {
         let label = UILabel()
-        label.font = UIFont.boldSystemFont(ofSize: 16)
+        label.font = UIFont.systemFont(ofSize: 16)
         label.textColor = .black
         label.translatesAutoresizingMaskIntoConstraints = false
         label.clipsToBounds = true
@@ -48,7 +48,7 @@ class CustomTableViewCell: UITableViewCell {
     
     let dataInfectedLabel:UILabel = {
         let label = UILabel()
-        label.font = UIFont.boldSystemFont(ofSize: 16)
+        label.font = UIFont.systemFont(ofSize: 16)
         label.textColor = .black
         label.translatesAutoresizingMaskIntoConstraints = false
         label.clipsToBounds = true
@@ -57,7 +57,7 @@ class CustomTableViewCell: UITableViewCell {
     
     let dataRecoveredLabel:UILabel = {
         let label = UILabel()
-        label.font = UIFont.boldSystemFont(ofSize: 16)
+        label.font = UIFont.systemFont(ofSize: 16)
         label.textColor = .black
         label.translatesAutoresizingMaskIntoConstraints = false
         label.clipsToBounds = true
@@ -66,7 +66,7 @@ class CustomTableViewCell: UITableViewCell {
     
     let dataDeceasedLabel:UILabel = {
         let label = UILabel()
-        label.font = UIFont.boldSystemFont(ofSize: 16)
+        label.font = UIFont.systemFont(ofSize: 16)
         label.textColor = .black
         label.translatesAutoresizingMaskIntoConstraints = false
         label.clipsToBounds = true
@@ -76,6 +76,7 @@ class CustomTableViewCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
+        self.contentView.addSubview(nameRegionLabel)
         self.contentView.addSubview(infectedLabel)
         self.contentView.addSubview(recoveredLabel)
         self.contentView.addSubview(deceasedLabel)
@@ -83,22 +84,29 @@ class CustomTableViewCell: UITableViewCell {
         self.contentView.addSubview(dataRecoveredLabel)
         self.contentView.addSubview(dataDeceasedLabel)
         
-        infectedLabel.leadingAnchor.constraint(equalTo:self.contentView.leadingAnchor, constant:10).isActive = true
+        NSLayoutConstraint.activate([
+            
+            nameRegionLabel.topAnchor.constraint(equalTo:self.contentView.topAnchor, constant:10),
+            nameRegionLabel.leadingAnchor.constraint(equalTo:self.contentView.leadingAnchor, constant:10),//.isActive = true
         
-        dataInfectedLabel.topAnchor.constraint(equalTo:self.contentView.topAnchor).isActive = true
-        dataInfectedLabel.rightAnchor.constraint(equalTo:self.contentView.rightAnchor, constant:10).isActive = true
+            infectedLabel.topAnchor.constraint(equalTo:self.nameRegionLabel.bottomAnchor, constant:5),
+            infectedLabel.leadingAnchor.constraint(equalTo:self.contentView.leadingAnchor, constant:10),
+            
+            dataInfectedLabel.topAnchor.constraint(equalTo:self.nameRegionLabel.bottomAnchor,constant: 5),
+            dataInfectedLabel.rightAnchor.constraint(equalTo:self.contentView.rightAnchor,constant:-5),
+            
+            recoveredLabel.topAnchor.constraint(equalTo:self.infectedLabel.bottomAnchor, constant: 2),
+            recoveredLabel.leftAnchor.constraint(equalTo:self.contentView.leftAnchor, constant:10),
+            
+            dataRecoveredLabel.topAnchor.constraint(equalTo:self.dataInfectedLabel.bottomAnchor,constant: 2),
+            dataRecoveredLabel.rightAnchor.constraint(equalTo:self.contentView.rightAnchor, constant:-5),
         
-        recoveredLabel.topAnchor.constraint(equalTo:self.infectedLabel.bottomAnchor).isActive = true
-        recoveredLabel.leftAnchor.constraint(equalTo:self.contentView.leftAnchor, constant:10).isActive = true
+            deceasedLabel.topAnchor.constraint(equalTo:self.recoveredLabel.bottomAnchor,constant: 2),
+            deceasedLabel.leftAnchor.constraint(equalTo:self.contentView.leftAnchor, constant:10),
         
-        dataRecoveredLabel.topAnchor.constraint(equalTo:self.dataInfectedLabel.bottomAnchor).isActive = true
-        dataRecoveredLabel.rightAnchor.constraint(equalTo:self.contentView.rightAnchor, constant:10).isActive = true
-        
-        deceasedLabel.topAnchor.constraint(equalTo:self.recoveredLabel.bottomAnchor).isActive = true
-        deceasedLabel.leftAnchor.constraint(equalTo:self.contentView.leftAnchor, constant:10).isActive = true
-        
-        dataDeceasedLabel.topAnchor.constraint(equalTo:self.dataRecoveredLabel.bottomAnchor).isActive = true
-        dataDeceasedLabel.rightAnchor.constraint(equalTo:self.contentView.rightAnchor, constant:10).isActive = true
+            dataDeceasedLabel.topAnchor.constraint(equalTo:self.dataRecoveredLabel.bottomAnchor,constant: 2),
+            dataDeceasedLabel.rightAnchor.constraint(equalTo:self.contentView.rightAnchor, constant:-5)
+        ])
     }
     
     required init?(coder aDecoder: NSCoder) {

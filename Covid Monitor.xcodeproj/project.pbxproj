@@ -45,6 +45,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB305E4325E7F00100277A36 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EB50E1CE25E4E98400E9C71F /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		EB305E4425E7F02F00277A36 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EB50E1E525E508B900E9C71F /* NetworkCovidManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		EB4623E925E56CF2005EEF27 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -73,11 +89,12 @@
 		EB50E1C925E4E98400E9C71F /* Covid Monitor */ = {
 			isa = PBXGroup;
 			children = (
+				EB305E4425E7F02F00277A36 /* Network */,
+				EB305E4325E7F00100277A36 /* Controller */,
 				EBB1340725E6BEDA00AB38EB /* View */,
 				EB4623E925E56CF2005EEF27 /* Model */,
 				EB50E1CA25E4E98400E9C71F /* AppDelegate.swift */,
 				EB50E1CC25E4E98400E9C71F /* SceneDelegate.swift */,
-				EB50E1E525E508B900E9C71F /* NetworkCovidManager.swift */,
 				EB50E1D025E4E98400E9C71F /* Main.storyboard */,
 				EB50E1D325E4E98700E9C71F /* Assets.xcassets */,
 				EB50E1D525E4E98700E9C71F /* LaunchScreen.storyboard */,
@@ -89,7 +106,6 @@
 		EBB1340725E6BEDA00AB38EB /* View */ = {
 			isa = PBXGroup;
 			children = (
-				EB50E1CE25E4E98400E9C71F /* ViewController.swift */,
 				EB4623EB25E574B2005EEF27 /* CustomTableViewCell.swift */,
 			);
 			path = View;

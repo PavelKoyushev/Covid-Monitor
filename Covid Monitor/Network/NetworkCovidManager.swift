@@ -21,8 +21,8 @@ class NetworkCovidManager {
         let session = URLSession(configuration: .default)
         let task = session.dataTask(with: url) { data, response, error in
             if let data = data {
-                if let currentWeather = self.parseJSON(withData: data) {
-                    self.delegate?.updateInterface(self, with: currentWeather)
+                if let currentCases = self.parseJSON(withData: data) {
+                    self.delegate?.updateInterface(self, with: currentCases)
                 }
             }
         }
@@ -33,10 +33,10 @@ class NetworkCovidManager {
         let decoder = JSONDecoder()
         do {
             let currentCasesData = try decoder.decode(CurrentCasesData.self, from: data)
-            guard let currentWeather = CurrentCases(currentCasesData: currentCasesData) else {
+            guard let currentCases = CurrentCases(currentCasesData: currentCasesData) else {
                 return nil
             }
-            return currentWeather
+            return currentCases
         } catch let error as NSError {
             print(error.localizedDescription)
         }
