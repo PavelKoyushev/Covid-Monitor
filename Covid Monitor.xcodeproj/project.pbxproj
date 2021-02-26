@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB25FB7F25E97405006192C8 /* ViewController+SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB25FB7E25E97405006192C8 /* ViewController+SetupView.swift */; };
 		EB4623EC25E574B2005EEF27 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4623EB25E574B2005EEF27 /* CustomTableViewCell.swift */; };
 		EB50E1CB25E4E98400E9C71F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB50E1CA25E4E98400E9C71F /* AppDelegate.swift */; };
 		EB50E1CD25E4E98400E9C71F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB50E1CC25E4E98400E9C71F /* SceneDelegate.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EB25FB7E25E97405006192C8 /* ViewController+SetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+SetupView.swift"; sourceTree = "<group>"; };
 		EB4623EB25E574B2005EEF27 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		EB50E1C725E4E98400E9C71F /* Covid Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Covid Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB50E1CA25E4E98400E9C71F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				EB50E1CE25E4E98400E9C71F /* ViewController.swift */,
+				EB25FB7E25E97405006192C8 /* ViewController+SetupView.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB50E1CF25E4E98400E9C71F /* ViewController.swift in Sources */,
+				EB25FB7F25E97405006192C8 /* ViewController+SetupView.swift in Sources */,
 				EB50E1CB25E4E98400E9C71F /* AppDelegate.swift in Sources */,
 				EB50E1CD25E4E98400E9C71F /* SceneDelegate.swift in Sources */,
 				EB4623EC25E574B2005EEF27 /* CustomTableViewCell.swift in Sources */,

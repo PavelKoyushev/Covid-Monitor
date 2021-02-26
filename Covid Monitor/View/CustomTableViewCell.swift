@@ -13,7 +13,6 @@ class CustomTableViewCell: UITableViewCell {
     let nameRegionLabel:UILabel = {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 16)
-        label.textColor = .black
         label.translatesAutoresizingMaskIntoConstraints = false
         label.clipsToBounds = true
         return label
@@ -22,7 +21,6 @@ class CustomTableViewCell: UITableViewCell {
     let infectedLabel:UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 16)
-        label.textColor = .black
         label.translatesAutoresizingMaskIntoConstraints = false
         label.clipsToBounds = true
         return label
@@ -31,7 +29,6 @@ class CustomTableViewCell: UITableViewCell {
     let recoveredLabel:UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 16)
-        label.textColor = .black
         label.translatesAutoresizingMaskIntoConstraints = false
         label.clipsToBounds = true
         return label
@@ -40,7 +37,6 @@ class CustomTableViewCell: UITableViewCell {
     let deceasedLabel:UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 16)
-        label.textColor = .black
         label.translatesAutoresizingMaskIntoConstraints = false
         label.clipsToBounds = true
         return label
@@ -49,7 +45,6 @@ class CustomTableViewCell: UITableViewCell {
     let dataInfectedLabel:UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 16)
-        label.textColor = .black
         label.translatesAutoresizingMaskIntoConstraints = false
         label.clipsToBounds = true
         return label
@@ -58,7 +53,6 @@ class CustomTableViewCell: UITableViewCell {
     let dataRecoveredLabel:UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 16)
-        label.textColor = .black
         label.translatesAutoresizingMaskIntoConstraints = false
         label.clipsToBounds = true
         return label
@@ -67,7 +61,6 @@ class CustomTableViewCell: UITableViewCell {
     let dataDeceasedLabel:UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 16)
-        label.textColor = .black
         label.translatesAutoresizingMaskIntoConstraints = false
         label.clipsToBounds = true
         return label
@@ -85,7 +78,6 @@ class CustomTableViewCell: UITableViewCell {
         self.contentView.addSubview(dataDeceasedLabel)
         
         NSLayoutConstraint.activate([
-            
             nameRegionLabel.topAnchor.constraint(equalTo:self.contentView.topAnchor, constant:10),
             nameRegionLabel.leadingAnchor.constraint(equalTo:self.contentView.leadingAnchor, constant:10),//.isActive = true
         
